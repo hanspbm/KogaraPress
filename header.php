@@ -14,6 +14,31 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			<?php $theme_url = content_url() . "/themes/KogaraPress/"; ?>
+
+			@font-face {
+				font-family: 'DistInking';
+				src: url('<?php echo $theme_url ; ?>src/assets/fonts/distinking-regular-webfont.ttf') format('truetype'),
+					 url('<?php echo $theme_url ; ?>src/assets/fonts/distinking-regular-webfont.woff2') format('woff2'),
+					 url('<?php echo $theme_url ; ?>src/assets/fonts/distinking-regular-webfont.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: 'DistInking';
+				src: url('<?php echo $theme_url ; ?>src/assets/fonts/distinking-bold-webfont.ttf') format('truetype'),
+					 url('<?php echo $theme_url ; ?>src/assets/fonts/distinking-bold-webfont.woff2') format('woff2'),
+					 url('<?php echo $theme_url ; ?>src/assets/fonts/distinking-bold-webfont.woff') format('woff');
+				font-weight: bold;
+			}
+		</style>
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">		
+
+		
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -33,11 +58,21 @@
 			</div>
 		</div>
 
+		<div class="header-info">
+			<div class="main-container">
+				<a class="date">April 21, 2018</a>
+				<a class="address" href="https://www.google.com/maps/place/Middlesex+County+College/@40.5048319,-74.3689419,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3c84ebc6cddfd:0x9cd927edaafc1357!8m2!3d40.5048319!4d-74.3667479" target="_blank">2600 Woodbridge Ave, Edison, NJ 08837</a>
+			</div>
+		</div>
+
 		<nav class="site-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
+			<!-- <div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<a href="<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?></a>
 				</div>
+			</div> -->
+			<div class="top-bar-middle">
+				<?php foundationpress_top_bar_m(); ?>
 			</div>
 			<div class="top-bar-right">
 				<?php foundationpress_top_bar_r(); ?>
@@ -47,5 +82,12 @@
 				<?php endif; ?>
 			</div>
 		</nav>
+
+		<script>
+			// Insert logo in middle of main menu
+			var middleLIpos = Math.ceil($("#menu-main-menu > *").length / 2);	// Grab position of middle li tag
+			// console.log(middleLIpos)
+			$("#menu-main-menu li:nth-child(" + middleLIpos + ")").after("<li class='menu-item logo'><a href='<?php echo esc_url( home_url() ); ?>' style='background: url(<?php echo esc_url( home_url() ); ?>/wp-content/uploads/2017/10/kogaracon-logo-revised.png) no-repeat; background-size: 100%;'></li>");
+		</script>
 
 	</header>

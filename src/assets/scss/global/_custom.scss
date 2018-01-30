@@ -1,0 +1,231 @@
+/* --- Global --- */
+	.background-gray { background: rgb(247, 247, 247); }
+
+/* --- Header --- */
+	.site-header {
+		text-align: center;
+
+		.header-info {
+			background: #252525;
+			height: 30px;
+
+			.main-container {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: nowrap;
+				align-items: center;
+				height: inherit;
+
+				a {
+					color: #FFF;
+				}
+			}
+		}
+
+		.top-bar {
+			.menu {
+				flex-wrap: nowrap;
+
+				.menu-item {
+					flex-grow: 1;
+
+					a {
+						color: #0a0a0a;
+						text-transform: uppercase;
+						font-weight: 400;
+						position: relative;
+						top: 50%;
+						transform: translateY(-50%);
+						padding: rem-calc(24) 1rem;
+					}
+
+					a:hover:not(.button) {
+						background: white;
+					}
+				}
+			}
+
+			.top-bar-middle {
+				flex: 1 1 auto;
+				height: 60px;
+
+				.menu {
+					height: inherit;
+					max-width: 75rem;
+					margin: 0 auto;
+
+					.menu-item:first-child {
+						border-left: 1px solid #a9a9a9;
+					}
+
+					.menu-item {
+						border-right: 1px solid #a9a9a9;
+					}
+
+					.logo a {
+						height: 110px;
+						width: 360px;
+						display: inline-block;
+						z-index: 10;
+					}
+				}
+			}
+		}
+	}
+
+/* --- Footer --- */
+	footer {
+		text-align: center;
+		background: #252525;
+		color: #FFF;
+
+		section {
+			padding: 0;
+		}
+	}
+
+/* --- Section --- */
+	section {
+		text-align: center;
+		padding: 4.5rem 0;
+
+		h2 {
+			margin-bottom: 2rem;
+		}
+	}
+
+/* --- Section - Home Hero --- */
+	#home-hero {
+		position: relative;
+		height: 600px;
+		background: url('/wp-content/uploads/2017/10/22790085_10155172175527775_921713177_o.png');
+		background-color: #b4e3f9;
+		background-position: right;
+		background-position-y: 12%;
+	    background-repeat: no-repeat;
+	    background-size: 80%;
+	    margin: 0;
+
+    	.ujic-hold {
+    		position: absolute;
+    		bottom: -15%;
+    		left: 0;
+    		right: 0;
+
+    		.ujiCountdown {
+    			background: url(/wp-content/themes/KogaraPress/src/assets/images/inkboard.png);
+    			background-repeat: no-repeat;
+    			background-size: contain;
+    			width: 600px;
+
+    			.countdown_row {
+    				display: flex;
+    				flex-wrap: nowrap;
+    				justify-content: center;
+    				align-items: center;
+    				height: 170px;
+
+					.countdown_section {
+						padding: 0 12px 0;
+
+						.countdown_amount {
+							font-family: 'DistInking' !important;
+							font-size: 70px !important;
+							width: 40px !important;
+							background: none !important;
+							box-shadow: none;
+							padding: 0;
+							line-height: 1.4 !important;
+						}
+
+						.countdown_amount:first-child {
+							margin-right: -5px !important;
+						}
+
+						.countdown_amount:nth-child(2) {
+							margin-left: -5px !important;
+						}
+
+						.countdown_txt {
+							text-transform: uppercase;
+							margin: 0 0 10px;
+							letter-spacing: .05em;
+						}
+					}
+    			}
+    		}
+    	}
+	}
+
+/* --- Section - Latest News --- */
+	#latestnews {
+		padding-top: 8rem;
+
+		.fts-twitter-div {
+			margin-left: -0.9375rem;			/* .grid-margin-x */
+		    margin-right: -0.9375rem;			/* .grid-margin-x */
+			margin-top: -0.9375rem;				/* .grid-margin-y */
+		    margin-bottom: -0.9375rem;			/* .grid-margin-y */    
+		    display: flex;						/* .grid-x */
+		    flex-flow: row wrap;				/* .grid-x */
+		    justify-content: center;
+			
+			.fts-tweeter-wrap {
+				width: calc(50% - 1.875rem);	/* .grid-margin-x > .medium-6 */
+				max-width: 500px;
+				margin-left: 0.9375rem;			/* .grid-margin-x > .cell */
+			    margin-right: 0.9375rem;		/* .grid-margin-x > .cell */
+				margin-top: 0.9375rem;			/* .grid-margin-y > .cell */
+			    margin-bottom: 0.9375rem;		/* .grid-margin-y > .cell */
+			    flex: 0 0 auto;					/* .cell */
+
+			    .tweeter-info {
+			    	border: 1px solid #a9a9a9;
+			    	text-align: left;
+
+			    	.fts-twitter-full-name {
+			    		font-size: 20px !important;
+			    	}
+
+			    	.fts-twitter-text { 
+						padding: 10px 0 0;
+						font-size: 18px;
+						letter-spacing: 0.03rem;
+						line-height: 1.2;
+						font-weight: 100;
+
+			    		br {
+			    			display: none;
+			    		}
+			    	}
+			    }
+			}
+		}
+	}
+
+/* --- Section - #Kogaracon --- */
+	#hashtagkogaracon {
+		h2 { font-style: italic; }
+		.cell { border: 1px solid #000; }
+
+		.slicker-instagram-placeholder {
+			height: 305px;
+		}
+	}
+
+/* --- Section - Contact Us --- */
+	#contact-us {
+		.main-container {
+			max-width: 400px;
+		}
+	}
+
+/* --- Section - Home Hero --- */
+	#page-hero {
+		height: 175px;
+		background: url('/wp-content/themes/KogaraPress/src/assets/images/kogara-pagebanner.jpg');
+		background-position: right;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    margin: 0;
+	}
