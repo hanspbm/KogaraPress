@@ -13,6 +13,9 @@
     <div class="footer-container">
         <div class="footer-grid">
             <?php dynamic_sidebar( 'footer-widgets' ); ?>
+            <div class="social">
+            	
+            </div>
         </div>
     </div>
 </footer>

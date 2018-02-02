@@ -182,7 +182,7 @@ endif;
 if ( ! function_exists( 'foundationpress_title_bar_responsive_toggle' ) ) :
 	function foundationpress_title_bar_responsive_toggle() {
 		if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) {
-			echo 'data-responsive-toggle="mobile-menu"';
+			echo 'data-responsive-toggle="mobile-menu" data-hide-for="large"';
 		}
 	}
 endif;

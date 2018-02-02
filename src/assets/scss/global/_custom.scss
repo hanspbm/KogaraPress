@@ -1,5 +1,5 @@
 /* --- Global --- */
-	.background-gray { background: rgb(247, 247, 247); }
+	.background-blue { background: #50C1B3; }
 
 /* --- Header --- */
 	.site-header {
@@ -20,6 +20,25 @@
 					color: #FFF;
 				}
 			}
+		}
+
+		.site-title-bar {
+			height: 60px;
+			background: $topbar-background;
+			justify-content: space-between;
+
+			.menu-icon::after {
+				background: black;
+				box-shadow: 0 7px 0 #000, 0 14px 0 #000;
+			}
+
+			.site-mobile-title a {
+				height: 110px;
+				width: 360px;
+				display: inline-block;
+				z-index: 10;
+				position: relative;
+			}			
 		}
 
 		.top-bar {
@@ -47,7 +66,10 @@
 
 			.top-bar-middle {
 				flex: 1 1 auto;
-				height: 60px;
+
+				@include breakpoint(large) {
+					height: 60px;
+				}
 
 				.menu {
 					height: inherit;

@@ -17,7 +17,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section id="hashtagkogaracon" class="background-gray">
+<section id="hashtagkogaracon" class="background-blue">
 	<div class="main-container">
 		<h2>#kogaracon</h2>
 
