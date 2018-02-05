@@ -17,6 +17,14 @@
 // Mobile menu
 .mobile-menu {
   display: none; // prevents repaint caused by JS hiding menu onload
+  position: relative;  
+
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 .off-canvas {
@@ -61,28 +69,68 @@
     line-height: 1.8;
   }
 
-  .menu a {
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
+  .menu {
+    flex-wrap: nowrap;
 
-    &:hover:not(.button) {
-      background-color: #42525D;
+    .menu-item {
+      flex-grow: 1;
+
+      a {
+        font-size: 0.8rem;
+        line-height: 1;
+        color: #0a0a0a;
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: rem-calc(24) 1rem;
+
+        &:hover:not(.button) {
+          background: white;
+        }        
+      }
     }
   }
 
   .menu .active > a { background-color: #ccc; }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu>li:not(.menu-text)>a { padding: 1.5rem 1rem; }
   .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
 
   .dropdown.menu .submenu { border: 0; }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
   .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
   .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
+
+  .top-bar-middle {
+    flex: 1 1 auto;
+
+    @include breakpoint(large) {
+      height: 60px;
+    }
+
+    .menu {
+      height: inherit;
+      max-width: 75rem;
+      margin: 0 auto;
+
+      .menu-item:first-child {
+        border-left: 1px solid #a9a9a9;
+      }
+
+      .menu-item {
+        border-right: 1px solid #a9a9a9;
+      }
+
+      .logo a {
+        height: 110px;
+        width: 360px;
+        display: inline-block;
+        z-index: 10;
+      }
+    }
+  }
 }
 
 .site-navigation {

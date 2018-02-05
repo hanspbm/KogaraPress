@@ -38,60 +38,12 @@
 				display: inline-block;
 				z-index: 10;
 				position: relative;
+
+				@include breakpoint(small only) {
+					width: 250px;
+					height: 73px;
+				}
 			}			
-		}
-
-		.top-bar {
-			.menu {
-				flex-wrap: nowrap;
-
-				.menu-item {
-					flex-grow: 1;
-
-					a {
-						color: #0a0a0a;
-						text-transform: uppercase;
-						font-weight: 400;
-						position: relative;
-						top: 50%;
-						transform: translateY(-50%);
-						padding: rem-calc(24) 1rem;
-					}
-
-					a:hover:not(.button) {
-						background: white;
-					}
-				}
-			}
-
-			.top-bar-middle {
-				flex: 1 1 auto;
-
-				@include breakpoint(large) {
-					height: 60px;
-				}
-
-				.menu {
-					height: inherit;
-					max-width: 75rem;
-					margin: 0 auto;
-
-					.menu-item:first-child {
-						border-left: 1px solid #a9a9a9;
-					}
-
-					.menu-item {
-						border-right: 1px solid #a9a9a9;
-					}
-
-					.logo a {
-						height: 110px;
-						width: 360px;
-						display: inline-block;
-						z-index: 10;
-					}
-				}
-			}
 		}
 	}
 
@@ -118,7 +70,6 @@
 
 /* --- Section - Home Hero --- */
 	#home-hero {
-		position: relative;
 		height: 600px;
 		background: url('/wp-content/uploads/2017/10/22790085_10155172175527775_921713177_o.png');
 		background-color: #b4e3f9;
@@ -127,12 +78,26 @@
 	    background-repeat: no-repeat;
 	    background-size: 80%;
 	    margin: 0;
+	    padding: 0;
+		/*display: flex;
+		flex-direction: column;
+		justify-content: flex-end;*/
 
     	.ujic-hold {
-    		position: absolute;
-    		bottom: -15%;
-    		left: 0;
-    		right: 0;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+    		/*margin-bottom: -6.5%;*/
+
+			@include breakpoint(small only) {
+				display: none;
+
+				/*-webkit-transform: scale(0.50);
+				   -moz-transform: scale(0.50);
+				        transform: scale(0.50);*/
+			}
 
     		.ujiCountdown {
     			background: url(/wp-content/themes/KogaraPress/src/assets/images/inkboard.png);
@@ -181,7 +146,10 @@
 
 /* --- Section - Latest News --- */
 	#latestnews {
-		padding-top: 8rem;
+
+		@include breakpoint(medium) {
+			padding-top: 8rem;
+		}
 
 		.fts-twitter-div {
 			margin-left: -0.9375rem;			/* .grid-margin-x */
@@ -191,7 +159,13 @@
 		    display: flex;						/* .grid-x */
 		    flex-flow: row wrap;				/* .grid-x */
 		    justify-content: center;
-			
+
+			@include breakpoint(small only) {
+				flex-direction: column;
+				align-items: center;
+				width: auto;
+			}
+
 			.fts-tweeter-wrap {
 				width: calc(50% - 1.875rem);	/* .grid-margin-x > .medium-6 */
 				max-width: 500px;
@@ -200,6 +174,10 @@
 				margin-top: 0.9375rem;			/* .grid-margin-y > .cell */
 			    margin-bottom: 0.9375rem;		/* .grid-margin-y > .cell */
 			    flex: 0 0 auto;					/* .cell */
+
+				@include breakpoint(small only) {
+					width: auto;
+				}
 
 			    .tweeter-info {
 			    	border: 1px solid #a9a9a9;

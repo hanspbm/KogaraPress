@@ -6,9 +6,9 @@
   @include xy-grid();
   margin-top: 1rem;
 
-  @include breakpoint(medium) {
+  /*@include breakpoint(medium) {*/
     margin-top: 4.5rem;
-  }
+  /*}*/
 
   &.sidebar-left {
     // Place the sidebar below main content on small screens ...
