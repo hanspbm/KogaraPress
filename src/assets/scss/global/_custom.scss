@@ -1,6 +1,20 @@
 /* --- Global --- */
 	.background-blue { background: #50C1B3; }
 
+	.transparent-background {
+		background: rgba(59, 61, 64, 0.55);
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;		
+	}	
+
+	.center-vertically {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}	
+
 /* --- Header --- */
 	.site-header {
 		text-align: center;
@@ -18,6 +32,19 @@
 
 				a {
 					color: #FFF;
+
+					@include breakpoint(medium down) {
+						font-size: rem-calc(14);
+					}
+
+					@include breakpoint(small only) {
+						text-transform: uppercase;
+					}
+
+					i {
+						font-size: rem-calc(20);
+						padding-left: 6px;
+					}
 				}
 			}
 		}
@@ -39,7 +66,7 @@
 				z-index: 10;
 				position: relative;
 
-				@include breakpoint(small only) {
+				@include breakpoint(medium down) {
 					width: 250px;
 					height: 73px;
 				}
@@ -62,6 +89,7 @@
 	section {
 		text-align: center;
 		padding: 4.5rem 0;
+		position: relative;
 
 		h2 {
 			margin-bottom: 2rem;
@@ -70,59 +98,98 @@
 
 /* --- Section - Home Hero --- */
 	#home-hero {
-		height: 600px;
 		background: url('/wp-content/uploads/2017/10/22790085_10155172175527775_921713177_o.png');
 		background-color: #b4e3f9;
-		background-position: right;
 		background-position-y: 12%;
 	    background-repeat: no-repeat;
-	    background-size: 80%;
+	    background-size: cover;
 	    margin: 0;
 	    padding: 0;
-		/*display: flex;
-		flex-direction: column;
-		justify-content: flex-end;*/
+		height: 300px;
+
+		@include breakpoint(medium only) {
+			height: 450px;
+		}
+
+		@include breakpoint(large) {
+			background-position: right;
+			background-position-y: 12%;
+		    background-size: 80%;
+			height: 600px;
+		}
+
+		.video,
+		.video iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+		}
+
+		h1 {
+			color: #FFF;
+			position: relative;
+			font-family: 'DistInking';
+			text-shadow: 3px 3px #000;
+			font-size: rem-calc(65);
+			max-width: 800px;
+			margin: 0 auto;
+		}
 
     	.ujic-hold {
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			right: 0;
+    		margin-bottom: -45px;
 
-    		/*margin-bottom: -6.5%;*/
-
-			@include breakpoint(small only) {
-				display: none;
-
-				/*-webkit-transform: scale(0.50);
-				   -moz-transform: scale(0.50);
-				        transform: scale(0.50);*/
+			@include breakpoint(large) {
+	    		margin-bottom: -80px;
 			}
 
     		.ujiCountdown {
     			background: url(/wp-content/themes/KogaraPress/src/assets/images/inkboard.png);
     			background-repeat: no-repeat;
     			background-size: contain;
-    			width: 600px;
+    			width: 300px;
+
+				@include breakpoint(large) {
+					width: 600px;
+				}
 
     			.countdown_row {
     				display: flex;
     				flex-wrap: nowrap;
     				justify-content: center;
     				align-items: center;
-    				height: 170px;
+    				height: 85px;
+
+					@include breakpoint(large) {
+	    				height: 170px;
+					}	    				
 
 					.countdown_section {
-						padding: 0 12px 0;
+						padding: 0 2px 0;
+
+						@include breakpoint(large) {
+							padding: 0 12px 0;
+						}						
 
 						.countdown_amount {
 							font-family: 'DistInking' !important;
-							font-size: 70px !important;
-							width: 40px !important;
+							font-size: 32px !important;
+							width: 23px !important;
 							background: none !important;
 							box-shadow: none;
 							padding: 0;
 							line-height: 1.4 !important;
+
+							@include breakpoint(large) {
+								font-size: 70px !important;
+								width: 40px !important;
+							}
 						}
 
 						.countdown_amount:first-child {
@@ -152,10 +219,10 @@
 		}
 
 		.fts-twitter-div {
-			margin-left: -0.9375rem;			/* .grid-margin-x */
-		    margin-right: -0.9375rem;			/* .grid-margin-x */
-			margin-top: -0.9375rem;				/* .grid-margin-y */
-		    margin-bottom: -0.9375rem;			/* .grid-margin-y */    
+			/*margin-left: -0.9375rem;*/
+		    /*margin-right: -0.9375rem;*/
+			/*margin-top: -0.9375rem;*/
+		    /*margin-bottom: -0.9375rem;*/
 		    display: flex;						/* .grid-x */
 		    flex-flow: row wrap;				/* .grid-x */
 		    justify-content: center;
@@ -174,14 +241,15 @@
 				margin-top: 0.9375rem;			/* .grid-margin-y > .cell */
 			    margin-bottom: 0.9375rem;		/* .grid-margin-y > .cell */
 			    flex: 0 0 auto;					/* .cell */
+			    border: 1px solid #a9a9a9;
 
 				@include breakpoint(small only) {
 					width: auto;
 				}
 
 			    .tweeter-info {
-			    	border: 1px solid #a9a9a9;
 			    	text-align: left;
+			    	border-bottom: none;
 
 			    	.fts-twitter-full-name {
 			    		font-size: 20px !important;

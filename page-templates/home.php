@@ -5,6 +5,13 @@ Template Name: Home
 get_header(); ?>
 
 <section id="home-hero">
+	<div class="video">
+	<iframe src="https://www.youtube.com/embed/NCunjdUqKu4?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=NCunjdUqKu4&amp;start=6&amp;mute=1" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="transparent-background"></div>
+
+	<h1 class="center-vertically">The long awaited convention event is almost here!</h1>
+
 	<?php echo do_shortcode( '[ujicountdown id="Hero Timer" expire="2018/04/21 09:00" hide="false" url="" subscr="" recurring="" rectype="second" repeats=""]' ); ?>
 </section>
 

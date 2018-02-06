@@ -18,6 +18,7 @@
 .mobile-menu {
   display: none; // prevents repaint caused by JS hiding menu onload
   position: relative;  
+  z-index: 5;
 
   .menu {
     position: absolute;
@@ -58,9 +59,9 @@
   }
 }
 
-// Tablet and desktop menu
 
 .top-bar {
+  flex-wrap: nowrap;
 
   .top-bar-title a {
     font-size: 1rem;
@@ -83,8 +84,11 @@
         font-weight: 400;
         position: relative;
         top: 50%;
-        transform: translateY(-50%);
         padding: rem-calc(24) 1rem;
+
+        @include breakpoint(large) {
+          transform: translateY(-50%);
+        }
 
         &:hover:not(.button) {
           background: white;
@@ -95,8 +99,13 @@
 
   .menu .active > a { background-color: #ccc; }
 
-  .menu>li:not(.menu-text)>a { padding: 1.5rem 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu>li:not(.menu-text)>a {
+    padding: 1rem 1rem;
+
+    @include breakpoint(large) {
+      padding: 1.5rem 1rem;
+    }
+  }
 
   .dropdown.menu .submenu { border: 0; }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
@@ -116,11 +125,17 @@
       margin: 0 auto;
 
       .menu-item:first-child {
-        border-left: 1px solid #a9a9a9;
+        @include breakpoint(large) {
+          border-left: 1px solid #a9a9a9;
+        }
       }
 
       .menu-item {
-        border-right: 1px solid #a9a9a9;
+        border-top: 1px solid #a9a9a9;
+
+        @include breakpoint(large) {
+          border-right: 1px solid #a9a9a9;
+        }
       }
 
       .logo a {
@@ -129,6 +144,12 @@
         display: inline-block;
         z-index: 10;
       }
+    }
+  }
+
+  .top-bar-right {
+    @include breakpoint(small only) {
+      display: none;
     }
   }
 }

@@ -52,12 +52,16 @@
 		<div class="header-info">
 			<div class="main-container">
 				<a class="date">April 21, 2018</a>
-				<a class="address" href="https://www.google.com/maps/place/Middlesex+County+College/@40.5048319,-74.3689419,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3c84ebc6cddfd:0x9cd927edaafc1357!8m2!3d40.5048319!4d-74.3667479" target="_blank">2600 Woodbridge Ave, Edison, NJ 08837</a>
+				<a class="address" href="https://www.google.com/maps/place/Middlesex+County+College/@40.5048319,-74.3689419,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3c84ebc6cddfd:0x9cd927edaafc1357!8m2!3d40.5048319!4d-74.3667479" target="_blank">
+					<span class="hide-for-medium">MAP<i class="fa fa-map-marker" aria-hidden="true"></i></span>
+					<span class="show-for-medium">2600 Woodbridge Ave, Edison, NJ 08837</span>
+				</a>
+
 			</div>
 		</div>
 
 		<div class="site-title-bar title-bar" <?php foundationpress_title_bar_responsive_toggle(); ?>>
-			<div></div>
+			<div style="width: 20px;"></div>
 
 			<span class="site-mobile-title title-bar-title">
 				<a href='<?php echo esc_url( home_url() ); ?>' style='background: url(<?php echo esc_url( home_url() ); ?>/wp-content/uploads/2017/10/kogaracon-logo-revised.png) no-repeat; background-size: 100%;'></a>
