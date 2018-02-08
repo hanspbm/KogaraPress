@@ -51,7 +51,7 @@
 	<header class="site-header" role="banner">
 		<div class="header-info">
 			<div class="main-container">
-				<a class="date">April 21, 2018</a>
+				<a class="date">April 21, 2018 • 10AM - 6PM</a>
 				<a class="address" href="https://www.google.com/maps/place/Middlesex+County+College/@40.5048319,-74.3689419,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3c84ebc6cddfd:0x9cd927edaafc1357!8m2!3d40.5048319!4d-74.3667479" target="_blank">
 					<span class="hide-for-medium">MAP<i class="fa fa-map-marker" aria-hidden="true"></i></span>
 					<span class="show-for-medium">2600 Woodbridge Ave, Edison, NJ 08837</span>

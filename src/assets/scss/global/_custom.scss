@@ -128,6 +128,14 @@
 			pointer-events: none;
 		}
 
+		/*@media (min-aspect-ratio: 16/9) {
+			.video { height: 300%; top: -100%; }
+		}
+
+		@media (max-aspect-ratio: 16/9) {
+			.video { width: 300%; left: -100%; }
+		}*/
+
 		h1 {
 			color: #FFF;
 			position: relative;
