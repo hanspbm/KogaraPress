@@ -6,7 +6,7 @@ get_header(); ?>
 
 <section id="home-hero">
 	<div class="video">
-		<iframe src="https://www.youtube.com/embed/NCunjdUqKu4?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=NCunjdUqKu4&amp;start=6&amp;mute=1" height="100%" width="100%" frameborder="0" allowfullscreen></iframe>
+		<div class="screen mute" id="tv"></div>
 	</div>
 	<div class="transparent-background"></div>
 

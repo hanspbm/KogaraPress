@@ -39,6 +39,12 @@ require_once( 'library/entry-meta.php' );
 /** Enqueue scripts */
 require_once( 'library/enqueue-scripts.php' );
 
+/** Enqueue custom scripts */
+function kogarapress_scripts() {
+    wp_enqueue_script( 'js-custom', get_template_directory_uri() . '/src/assets/js/custom.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'kogarapress_scripts' );
+
 /** Add theme support */
 require_once( 'library/theme-support.php' );
 
