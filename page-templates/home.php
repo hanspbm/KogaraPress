@@ -32,11 +32,14 @@ get_header(); ?>
 	</div>
 </section>
 
-<section id="contact-us">
+<section id="follow-us">
 	<div class="main-container">
-		<h2>Contact Us</h2>
+		<h2>Follow Us</h2>
 
-		<?php echo do_shortcode( '[contact-form-7 id="38" title="Contact form 1"]' ); ?>
+		<a href="https://www.facebook.com/kogaracon/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/kogaracon/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/kogaracon/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
 	</div>
 </section>
 
