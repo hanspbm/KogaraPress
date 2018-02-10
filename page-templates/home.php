@@ -33,13 +33,33 @@ get_header(); ?>
 </section>
 
 <section id="follow-us">
-	<div class="main-container">
-		<h2>Follow Us</h2>
+	<h2>Follow Us</h2>
 
-		<a href="https://www.facebook.com/kogaracon/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-		<a href="https://twitter.com/kogaracon/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-		<a href="https://www.instagram.com/kogaracon/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
+	<div class="grid-x grid-padding-x align-center">
+		<div class="cell shrink">
+			<a href="https://www.facebook.com/kogaracon/" target="_blank">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+		</div>
+		<div class="cell shrink">
+			<a href="https://twitter.com/kogaracon/" target="_blank">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+		</div>
+		<div class="cell shrink">
+			<a href="https://www.instagram.com/kogaracon/" target="_blank">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+		</div>
 	</div>
 </section>
 
