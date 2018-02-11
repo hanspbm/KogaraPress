@@ -51,11 +51,12 @@
   }
 }
 
-.mobile-menu,
+.top-bar .mobile-menu,
 .mobile-off-canvas-menu {
 
   .menu .is-active > a {
     background-color: lighten($dark-nav-color, 5%);
+    color: #FFF;
   }
 }
 
@@ -131,7 +132,9 @@
       }
 
       .menu-item {
-        border-top: 1px solid #a9a9a9;
+        @include breakpoint(medium down) {
+          border-top: 1px solid #a9a9a9;
+        }
 
         @include breakpoint(large) {
           border-right: 1px solid #a9a9a9;

@@ -5,10 +5,8 @@
 .main-grid {
   @include xy-grid();
   margin-top: 1rem;
-
-  /*@include breakpoint(medium) {*/
-    margin-top: 4.5rem;
-  /*}*/
+  /*margin-top: 4.5rem;*/
+  margin: 4.5rem 0 5.5rem;
 
   &.sidebar-left {
     // Place the sidebar below main content on small screens ...
