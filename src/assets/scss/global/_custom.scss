@@ -343,3 +343,40 @@
 	    background-size: cover;
 	    margin: 0;
 	}
+
+/* --- Page - Activities --- */
+.page-template-activities .entry-content {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+
+	@include breakpoint(large) {
+		text-align: start;
+	}
+}
+
+.activity {
+	margin: 50px auto;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	h4 {
+		font-weight: 500;
+		margin-bottom: 25px;
+	}
+
+	a {
+		margin-top: 25px;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&#map {
+		text-align: center;
+	}
+}

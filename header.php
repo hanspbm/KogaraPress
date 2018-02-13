@@ -36,7 +36,7 @@
 		</style>
 
 		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
 		
 		<?php wp_head(); ?>
