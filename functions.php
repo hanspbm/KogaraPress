@@ -42,6 +42,12 @@ require_once( 'library/enqueue-scripts.php' );
 /** Enqueue custom scripts */
 function kogarapress_scripts() {
     wp_enqueue_script( 'js-custom', get_template_directory_uri() . '/src/assets/js/custom.js', array(), '1.0.0', true );
+
+    // Load responsive image script on Activities page only
+    if (is_page('Activities')) {
+    	wp_enqueue_script( 'js-rwdImageMaps', get_template_directory_uri() . '/src/assets/js/jquery.rwdImageMaps.min.js', array(), '', true );
+    }
+    
 }
 add_action( 'wp_enqueue_scripts', 'kogarapress_scripts' );
 

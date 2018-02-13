@@ -314,7 +314,7 @@
 
 /* --- Section - Follow Us --- */
 	#follow-us {
-		background: url(http://localhost:800/wp-content/uploads/2018/02/background-follow-us.jpg) no-repeat center;
+		background: url(/wp-content/uploads/2018/02/background-follow-us.jpg) no-repeat center;
 		background-size: cover;
 
 		h2 {
@@ -345,38 +345,43 @@
 	}
 
 /* --- Page - Activities --- */
-.page-template-activities .entry-content {
-	max-width: 900px;
-	margin: 0 auto;
-	text-align: center;
-
-	@include breakpoint(large) {
-		text-align: start;
-	}
-}
-
-.activity {
-	margin: 50px auto;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-
-	h4 {
-		font-weight: 500;
-		margin-bottom: 25px;
-	}
-
-	a {
-		margin-top: 25px;
-	}
-
-	img {
-		display: block;
+	.page-template-activities .entry-content {
+		max-width: 900px;
 		margin: 0 auto;
+		text-align: center;
+
+		@include breakpoint(large) {
+			text-align: start;
+		}
 	}
 
-	&#map {
+	#map {
 		text-align: center;
+		margin: 50px auto;
 	}
-}
+
+	.activity {
+		margin: 50px auto;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		h4 {
+			font-weight: 500;
+			margin-bottom: 25px;
+		}
+
+		a {
+			margin-top: 25px;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
