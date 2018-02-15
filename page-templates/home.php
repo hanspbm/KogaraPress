@@ -32,4 +32,17 @@ get_header(); ?>
 	</div>
 </section>
 
+<section id="links-grid">
+	<div class="main-container">
+		<div class="grid-x grid-margin-x grid-margin-y">
+			<div class="cell small-12 medium-6">
+				<a class="link" href="">
+					<img src="//placehold.it/410x180">
+					<h3>Guests</h3>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
 <?php get_footer();
