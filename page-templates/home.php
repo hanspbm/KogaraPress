@@ -57,11 +57,11 @@ get_header(); ?>
 				</a>
 			</div>
 			<div class="cell small-12 medium-6">
-				<a class="link" onclick="document.getElementsByClassName('registration')[0].classList.toggle('its-free');">
+				<a class="link registration" onclick="document.getElementsByClassName('registration')[0].classList.add('its-free');">
 					<img src="//placehold.it/425x200">
 					<div class="transparent-background"></div>
-					<h3>Registration</h3>
-					<p class="registration">It's free! =D</p>
+					<h3><span>No </span>Registration</h3>
+					<p>It's free! =D</p>
 				</a>
 			</div>
 		</div>

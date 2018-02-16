@@ -420,25 +420,36 @@
 				letter-spacing: .025rem;
 			}
 
+			span {
+				opacity: 0;
+				margin-left: $reveal-no-margin-left;
+			}
+
+			&.its-free span {
+				-webkit-animation: reveal-no .25s;
+				animation: reveal-no .25s;
+				animation-iteration-count: 1;
+				opacity: 1;
+				margin-left: 0;
+			}
+
 			p {
 				position: absolute;
-				top: 65%;
+				top: 75%;
 				right: 0;
 				left: 0;
 				color: #FFF;
 				margin-bottom: 0;
 				opacity: 0;
-
-				&.its-free {
-					opacity: 1;
-					/*-webkit-animation: reveal 1s;*/ /* Safari 4.0 - 8.0 */
-					/*animation: reveal .25s infinite;*/
-				}
 			}
+
+			&.its-free p {
+				-webkit-animation: reveal-its-free 1.5s;
+				animation: reveal-its-free 1.5s;
+				animation-iteration-count: 1;
+				top: 65%;
+				opacity: 1;
+			}			
 		}
 	}
 
-@keyframes reveal {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-}	

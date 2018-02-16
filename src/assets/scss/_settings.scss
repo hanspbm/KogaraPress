@@ -60,6 +60,7 @@
 //  54. Tooltip
 //  55. Top Bar
 //  56. Xy Grid
+//  57. Keyframes
 
 @import 'util/util';
 @import 'global/colors';
@@ -868,3 +869,8 @@ $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
+
+// 56. Xy Grid
+// -----------
+
+$reveal-no-margin-left: -55px;
