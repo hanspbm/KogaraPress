@@ -34,11 +34,34 @@ get_header(); ?>
 
 <section id="links-grid">
 	<div class="main-container">
-		<div class="grid-x grid-margin-x grid-margin-y">
+		<div class="grid-x grid-margin-x grid-margin-y align-center">
 			<div class="cell small-12 medium-6">
-				<a class="link" href="">
-					<img src="//placehold.it/410x180">
+				<a class="link" href="guests">
+					<img src="//placehold.it/425x200">
+					<div class="transparent-background"></div>
 					<h3>Guests</h3>
+				</a>
+			</div>
+			<div class="cell small-12 medium-6">
+				<a class="link" href="activities">
+					<img src="//placehold.it/425x200">
+					<div class="transparent-background"></div>
+					<h3>Activities</h3>
+				</a>
+			</div>
+			<div class="cell small-12 medium-6">
+				<a class="link" href="activities/panels">
+					<img src="//placehold.it/425x200">
+					<div class="transparent-background"></div>
+					<h3>Panels</h3>
+				</a>
+			</div>
+			<div class="cell small-12 medium-6">
+				<a class="link" onclick="document.getElementsByClassName('registration')[0].classList.toggle('its-free');">
+					<img src="//placehold.it/425x200">
+					<div class="transparent-background"></div>
+					<h3>Registration</h3>
+					<p class="registration">It's free! =D</p>
 				</a>
 			</div>
 		</div>

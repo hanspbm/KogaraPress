@@ -388,20 +388,57 @@
 
 /* --- Page - Links Grid --- */
 	#links-grid {
+		.main-container {
+			max-width: 950px;
+		}
+
 		.link {
 			position: relative;
+			display: block;
 
-			.image {
-
+			.transparent-background {
+				background: rgba(59, 61, 64, 0.55);
+				width: 100%;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				max-width: 425px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
 			}
 
 			h3 {
 				position: absolute;
-				top: 0;
+				top: 50%;
 				right: 0;
 				left: 0;
-				bottom: 0;
-				z-index: 0;
+				line-height: 0;
+				color: #FFF;
+				font-weight: 700;
+				font-size: 35px;
+				letter-spacing: .025rem;
+			}
+
+			p {
+				position: absolute;
+				top: 65%;
+				right: 0;
+				left: 0;
+				color: #FFF;
+				margin-bottom: 0;
+				opacity: 0;
+
+				&.its-free {
+					opacity: 1;
+					/*-webkit-animation: reveal 1s;*/ /* Safari 4.0 - 8.0 */
+					/*animation: reveal .25s infinite;*/
+				}
 			}
 		}
 	}
+
+@keyframes reveal {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}	
