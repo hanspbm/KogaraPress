@@ -35,14 +35,14 @@ get_header(); ?>
 
 							<div class="cell small-12 medium-6">
 								<img src="//placehold.it/350x325">
-								<h4>Pixel Face</h4>
+								<h4>StarDrop</h4>
 								<p class="guest-type">Musical Guest</p>
-								<p class="description">Nulla luctus ante vitae tincidunt volutpat. Sed nisl leo, tincidunt ac leo sit amet, pharetra ultricies nunc. Mauris at congue elit. In nibh tortor, accumsan nec neque vel, mollis blandit dolor. Phasellus ultricies sit amet neque eu malesuada.</p>
+								<p class="description">A J-Pop Rock band based in New Jersey! They write and perform original songs in Japanese and play covers of popular anime songs. Their first original project, hoshizuku vol. 1, was released last year.</p>
 
 								<p>
-									<a href="" target="_blank">Facebook</a> |
-									<a href="" target="_blank">Twitter</a> |
-									<a href="" target="_blank">Instagram</a>
+									<a href="http://facebook.com/StarDropMusic" target="_blank">Facebook</a> |
+									<a href="http://youtube.com/StarDropMusic " target="_blank">YouTube</a> |
+									<a href="https://soundcloud.com/stardropmusic/ " target="_blank">SoundCloud</a>
 								</p>
 							</div>
 
