@@ -411,6 +411,11 @@ section {
 	}
 }
 
+/* --- Section - Pokemon Go Map --- */
+#pokemon-go-map {
+	height: 400px;
+}
+
 /* --- Page - Activities --- */
 .page-template-activities .entry-content {
 	max-width: 900px;
@@ -425,6 +430,11 @@ section {
 #map {
 	text-align: center;
 	margin: 50px auto;
+}
+
+/* --- Page - Activities/Pokemon Go --- */
+.page-id-89 .main-grid {
+	margin-bottom: 3rem;
 }
 
 .activity {

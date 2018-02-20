@@ -43,11 +43,11 @@ get_header(); ?>
 									<h4>Artist Alley / Vendor Hall</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper molestie massa, ac dapibus ante tincidunt nec. Nullam a risus ante. Proin tincidunt semper lectus vel scelerisque. Suspendisse justo justo, imperdiet in ipsum non, tristique maximus dui. Praesent id venenatis justo. Aliquam luctus, nibh sit amet malesuada dignissim, risus neque eleifend nulla, vulputate elementum orci est eget sem.</p>
 
-									<a class="button show-for-large stroke" href="">LEARN MORE</a>
+									<a class="button show-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/artist-alley">LEARN MORE</a>
 								</div>
 								<div class="cell small-12 large-5">
 									<img src="//placehold.it/350x300">
-									<a class="button hide-for-large stroke" href="">LEARN MORE</a>
+									<a class="button hide-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/artist-alley">LEARN MORE</a>
 								</div>
 							</div>
 						</div>
@@ -60,11 +60,11 @@ get_header(); ?>
 									<h4>Panels</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper molestie massa, ac dapibus ante tincidunt nec. Nullam a risus ante. Proin tincidunt semper lectus vel scelerisque. Suspendisse justo justo, imperdiet in ipsum non, tristique maximus dui. Praesent id venenatis justo. Aliquam luctus, nibh sit amet malesuada dignissim, risus neque eleifend nulla, vulputate elementum orci est eget sem.</p>
 
-									<a class="button show-for-large stroke" href="">LEARN MORE</a>
+									<a class="button show-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/panels">LEARN MORE</a>
 								</div>
 								<div class="cell small-12 large-5">
 									<img src="//placehold.it/350x300">
-									<a class="button hide-for-large stroke" href="">LEARN MORE</a>
+									<a class="button hide-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/panels">LEARN MORE</a>
 								</div>
 							</div>
 						</div>						
@@ -77,11 +77,11 @@ get_header(); ?>
 									<h4>Cosplay Contest</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper molestie massa, ac dapibus ante tincidunt nec. Nullam a risus ante. Proin tincidunt semper lectus vel scelerisque. Suspendisse justo justo, imperdiet in ipsum non, tristique maximus dui. Praesent id venenatis justo. Aliquam luctus, nibh sit amet malesuada dignissim, risus neque eleifend nulla, vulputate elementum orci est eget sem.</p>
 
-									<a class="button show-for-large stroke" href="">LEARN MORE</a>
+									<a class="button show-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/cosplay-contest">LEARN MORE</a>
 								</div>
 								<div class="cell small-12 large-5">
 									<img src="//placehold.it/350x300">
-									<a class="button hide-for-large stroke" href="">LEARN MORE</a>
+									<a class="button hide-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/cosplay-contest">LEARN MORE</a>
 								</div>
 							</div>
 						</div>
@@ -94,11 +94,11 @@ get_header(); ?>
 									<h4>Video Game Room</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper molestie massa, ac dapibus ante tincidunt nec. Nullam a risus ante. Proin tincidunt semper lectus vel scelerisque. Suspendisse justo justo, imperdiet in ipsum non, tristique maximus dui. Praesent id venenatis justo. Aliquam luctus, nibh sit amet malesuada dignissim, risus neque eleifend nulla, vulputate elementum orci est eget sem.</p>
 
-									<a class="button show-for-large stroke" href="">LEARN MORE</a>
+									<a class="button show-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/video-game-room">LEARN MORE</a>
 								</div>
 								<div class="cell small-12 large-5">
 									<img src="//placehold.it/350x300">
-									<a class="button hide-for-large stroke" href="">LEARN MORE</a>
+									<a class="button hide-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/video-game-room">LEARN MORE</a>
 								</div>
 							</div>
 						</div>
@@ -111,11 +111,11 @@ get_header(); ?>
 									<h4>Table Top</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper molestie massa, ac dapibus ante tincidunt nec. Nullam a risus ante. Proin tincidunt semper lectus vel scelerisque. Suspendisse justo justo, imperdiet in ipsum non, tristique maximus dui. Praesent id venenatis justo. Aliquam luctus, nibh sit amet malesuada dignissim, risus neque eleifend nulla, vulputate elementum orci est eget sem.</p>
 
-									<a class="button show-for-large stroke" href="">LEARN MORE</a>
+									<a class="button show-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/table-top">LEARN MORE</a>
 								</div>
 								<div class="cell small-12 large-5">
 									<img src="//placehold.it/350x300">
-									<a class="button hide-for-large stroke" href="">LEARN MORE</a>
+									<a class="button hide-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/table-top">LEARN MORE</a>
 								</div>
 							</div>
 						</div>
@@ -128,11 +128,11 @@ get_header(); ?>
 									<h4>Crunchy Roll Chill Room</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper molestie massa, ac dapibus ante tincidunt nec. Nullam a risus ante. Proin tincidunt semper lectus vel scelerisque. Suspendisse justo justo, imperdiet in ipsum non, tristique maximus dui. Praesent id venenatis justo. Aliquam luctus, nibh sit amet malesuada dignissim, risus neque eleifend nulla, vulputate elementum orci est eget sem.</p>
 
-									<a class="button show-for-large stroke" href="">LEARN MORE</a>
+									<a class="button show-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/crunchy-roll-chill-room">LEARN MORE</a>
 								</div>
 								<div class="cell small-12 large-5">
 									<img src="//placehold.it/350x300">
-									<a class="button hide-for-large stroke" href="">LEARN MORE</a>
+									<a class="button hide-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/crunchy-roll-chill-room">LEARN MORE</a>
 								</div>
 							</div>
 						</div>
@@ -144,12 +144,9 @@ get_header(); ?>
 								<div class="cell small-12 large-7">
 									<h4>Karaoke</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper molestie massa, ac dapibus ante tincidunt nec. Nullam a risus ante. Proin tincidunt semper lectus vel scelerisque. Suspendisse justo justo, imperdiet in ipsum non, tristique maximus dui. Praesent id venenatis justo. Aliquam luctus, nibh sit amet malesuada dignissim, risus neque eleifend nulla, vulputate elementum orci est eget sem.</p>
-
-									<a class="button show-for-large stroke" href="">LEARN MORE</a>
 								</div>
 								<div class="cell small-12 large-5">
 									<img src="//placehold.it/350x300">
-									<a class="button hide-for-large stroke" href="">LEARN MORE</a>
 								</div>
 							</div>
 						</div>
@@ -162,11 +159,11 @@ get_header(); ?>
 									<h4>Pokemon GO</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper molestie massa, ac dapibus ante tincidunt nec. Nullam a risus ante. Proin tincidunt semper lectus vel scelerisque. Suspendisse justo justo, imperdiet in ipsum non, tristique maximus dui. Praesent id venenatis justo. Aliquam luctus, nibh sit amet malesuada dignissim, risus neque eleifend nulla, vulputate elementum orci est eget sem.</p>
 
-									<a class="button show-for-large stroke" href="">LEARN MORE</a>
+									<a class="button show-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/pokemon-go">LEARN MORE</a>
 								</div>
 								<div class="cell small-12 large-5">
 									<img src="//placehold.it/350x300">
-									<a class="button hide-for-large stroke" href="">LEARN MORE</a>
+									<a class="button hide-for-large stroke" href="<?php echo esc_url( home_url( '/' ) ); ?>activities/pokemon-go">LEARN MORE</a>
 								</div>
 							</div>
 						</div>

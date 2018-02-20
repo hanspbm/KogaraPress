@@ -39,14 +39,44 @@ require_once( 'library/entry-meta.php' );
 /** Enqueue scripts */
 require_once( 'library/enqueue-scripts.php' );
 
+/** Async load scripts */
+/** Source: https://ikreativ.com/async-with-wordpress-enqueue/ */
+function async_scripts($url)
+{
+    if ( strpos( $url, '#asyncload') === false )
+        return $url;
+    else if ( is_admin() )
+        return str_replace( '#asyncload', '', $url );
+    else
+	return str_replace( '#asyncload', '', $url )."' async='async"; 
+    }
+add_filter( 'clean_url', 'async_scripts', 11, 1 );
+
+/** Defer load scripts */
+function defer_scripts($url)
+{
+    if ( strpos( $url, '#defer') === false )
+        return $url;
+    else if ( is_admin() )
+        return str_replace( '#defer', '', $url );
+    else
+	return str_replace( '#defer', '', $url )."' defer='defer"; 
+    }
+add_filter( 'clean_url', 'defer_scripts', 11, 1 );
+
 /** Enqueue custom scripts */
 function kogarapress_scripts() {
     wp_enqueue_script( 'js-custom', get_template_directory_uri() . '/src/assets/js/custom.js', array(), '1.0.0', true );
 
     // Load responsive image script on Activities page only
     if (is_page('Activities')) {
-    	wp_enqueue_script( 'js-rwdImageMaps', get_template_directory_uri() . '/src/assets/js/jquery.rwdImageMaps.min.js', array(), '', true );
+		wp_enqueue_script( 'js-rwdImageMaps', get_template_directory_uri() . '/src/assets/js/jquery.rwdImageMaps.min.js', array(), '', true );
     }
+
+    // Load Google Maps script
+	if (is_page('pokemon-go')) {
+		wp_enqueue_script( 'js-google-maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCKH618xCctn-z8Ielzso4YTJZqFd26q8o&callback=initMap#asyncload#defer', array(), '', true );
+	}
     
 }
 add_action( 'wp_enqueue_scripts', 'kogarapress_scripts' );
